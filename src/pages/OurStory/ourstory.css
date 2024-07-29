@@ -1,0 +1,105 @@
+.OurStory {
+  width: 100vw;
+}
+.OurStory-hero {
+  height: 100vh;
+  width: 100vw;
+  background: url("./OurStoryPage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.OurStory-content {
+  background: url("./background.jpg");
+  background-size: contain;
+  padding: 5vh 5vw;
+  width: 90vw;
+}
+.OurStory-content-card {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -30px;
+  display: flex;
+  justify-content: space-around;
+  height: 50vh;
+  background-color: #ffffff68;
+  border-radius: 16px;
+  margin: 5vh 0px;
+  padding: 2.5vw;
+  transition: 300ms linear;
+
+  h1 {
+    color: #141d74;
+    /* color:  rgb(219, 43, 43); */
+    font-family: Cormorant Infant, serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+  p {
+    color: black;
+    font-family: Cormorant Infant, serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+}
+.OurStory-content-card:hover {
+  background: #ffffff90;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.reverse {
+  flex-direction: row-reverse;
+
+  h1 {
+    color: #db2b2b;
+    font-family: Cormorant Infant, serif;
+    font-size: 2.2rem;
+
+  }
+}
+.OurStory-content-card-text {
+  width: 40vw;
+}
+.OurStory-content-card-img {
+  width: 30vw;
+  padding: 10px;
+  img {
+    width: 100%;
+  }
+}
+@media (max-width: 786px) {
+  h1 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+    width: 80vw;
+  }
+  .OurStory-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .OurStory-content-card {
+    background: #ffff;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+  }
+  .OurStory-content-card:hover {
+    background: #ffff;
+  }
+  .OurStory-content-card-img {
+    padding-top: 10px;
+    width: 100%;
+  }
+  .OurStory-content-card-text {
+    width: 100%;
+  }
+  .OurStory-hero {
+    /* display: none; */
+  }
+}

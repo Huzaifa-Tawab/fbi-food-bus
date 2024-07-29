@@ -1,0 +1,486 @@
+/* Franchise Form Styles */
+.Franchise {
+  padding: 10vw 5vw 0px 5vw;
+  background: url("./background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.Franchise > h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #db2b2b;
+  font-family: Cormorant Infant, serif;
+}
+.Franchise-Form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0px 5vw 0px 5vw;
+  margin: 20px 10vw;
+  form {
+    background: #0000002f;
+  }
+}
+
+.Franchise-Form label {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 600;
+
+  margin-top: 13px;
+}
+
+.Franchise-Form > h1,
+.Franchise-Form > p {
+  color: #000000;
+  font-family: Cormorant Infant, serif;
+  font-weight: 700;
+}
+.Franchise-Form p {
+  font-family: Cormorant Infant, serif;
+
+  font-weight: 400;
+}
+
+/* Fields and Inputs */
+
+.franchise-field-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.franchise-field-select {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.franchise-field {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.franchise-field input,
+.franchise-field-select select {
+  /* width: 300px; */
+  font-size: 18px;
+  padding: 5px 10px;
+  outline: none;
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #c4d1eb;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px 0px #e2e2e2;
+  transition: 0.3s ease;
+}
+
+.franchise-field input:focus,
+.franchise-field-select select:focus {
+  background: #ffffff;
+  border: 1px solid #5a7ec7;
+  border-radius: 10px;
+}
+
+.franchise-field input::placeholder {
+  color: #dddddd;
+}
+
+/* Error Message */
+
+.error {
+  color: red;
+}
+
+/* Submit Button */
+
+.franchise-field-submit {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  right: 3vw;
+}
+.form {
+  padding: 5px 60px;
+  font-family: Cormorant Infant, serif;
+}
+
+.franchise-field-submit button {
+  width: 80%;
+  background-color: #db2b2b;
+  border-radius: 6px;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  user-select: none;
+  font-family: Cormorant Infant, serif;
+
+  font-weight: 600;
+}
+
+.franchise-field-submit button:disabled {
+  cursor: default;
+}
+
+.franchise-field-submit button:focus {
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0,
+    rgba(50, 151, 211, 0.3) 0 0 0 4px;
+}
+/* Cards */
+.Franchise-cards {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  width: 300px;
+  height: 300px;
+  perspective: 500px;
+}
+
+.location-dropdown {
+  margin-top: 10px;
+}
+
+
+/* .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+} */
+
+/* .card:hover .content {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+} */
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* background: red; */
+  /* color: #000; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  font-family: Cormorant Infant, serif;
+  font-weight: 500;
+
+  p {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    font-family: Cormorant Infant, serif;
+
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    /* padding-bottom: 30px; */
+    font-weight: 500;
+  }
+}
+.front h1 {
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.8rem;
+  font-family: Cormorant Infant, serif;
+}
+.bluee h1 {
+  color: #fff;
+  line-height: 1.8rem;
+  font-weight: 600;
+  font-family: Cormorant Infant, serif;
+}
+.fronts {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* background: red; */
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  font-family: Cormorant Infant, serif;
+  font-weight: 500;
+
+  p {
+    font-size: 1.2rem;
+    /* padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px; */
+    padding: 10px 20px;
+    font-weight: 500;
+  }
+}
+.bluee {
+  border-radius: 10px;
+  background: #dc3a3a;
+}
+.front {
+  border-radius: 10px;
+  background: #1b257e;
+  color: white;
+}
+/* .back {
+  background: blue;
+  color: white;
+  transform: rotateY(180deg);
+  font-family: Josefin Sans,serif;
+  font-weight: 500;
+} */
+/* .bluee{
+  background: blue;
+  color: white;
+
+}
+.bluees{
+  background: red;
+  color: white;
+} */
+.Frannchise-hero {
+  width: 55vw;
+}
+.fran {
+  width: 55vw;
+}
+.Frannchise-hero {
+  width: 55vw;
+
+  .fran {
+    width: 55vw;
+    margin-left: 17vw;
+    margin-bottom: 15vh;
+  }
+}
+.Franchise-Form > form {
+  padding: 20px 10%;
+  margin-top: 3vh;
+  border-radius: 16px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 786px) {
+  .bluee h1 {
+    color: #fff;
+    font-size: 2rem;
+    /* text-decoration: underline; */
+  }
+  .front p {
+    padding: 0px;
+  }
+  .Franchise-Form {
+    background: #e2e2e2;
+    padding: 0;
+    margin: 0;
+    /* padding-top: 7vh; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .Franchise-Form > p {
+    padding-bottom: 2vh;
+  }
+  .Franchise-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .franchise-field-group {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .franchise-field-select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    select {
+      width: 300px;
+      padding: 5px 10px;
+      outline: none;
+      background: #ffffff;
+      color: #000000;
+      border: 1px solid #c4d1eb;
+      border-radius: 5px;
+      box-shadow: 3px 3px 2px 0px #e2e2e2;
+    }
+  }
+
+  .franchise-field-submit button {
+    width: 50%;
+  }
+}
+.flex-contact {
+  display: flex;
+  justify-content: space-between;
+}
+.mail-content {
+}
+.youtubevideos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.youtubevideos iframe {
+  cursor: pointer;
+  margin: 20px 20px;
+}
+.youtubevid {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.vid {
+  margin: 30px 20px;
+  bottom: 25px;
+  position: relative;
+}
+
+.about-start {
+  display: flex;
+  color: #dc3a3a;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  position: relative;
+  top: 50px;
+  margin-bottom: 60px;
+  font-family: Cormorant Infant, serif;
+  font-weight: 700;
+}
+
+@media (max-width: 786px) {
+  .about-start h1 {
+    text-align: center;
+    font-size: 37px;
+  }
+  .vid {
+    margin-top: 10px;
+    bottom: 2px;
+    padding-top: 10px;
+
+    position: relative;
+  }
+  .youtubevideos iframe {
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding-bottom: 11px;
+  }
+  /* .back p{
+    font-size :1rem;
+    width: 65vw;
+  } */
+  .card {
+    width: 80vw;
+    height: 250px;
+    text-align: center;
+
+    /* perspective: 500px; */
+  }
+
+  .Frannchise-hero {
+    width: 100%;
+
+    .fran {
+      width: 100%;
+      margin-left: 0px;
+      /* margin-left: 15vw; 
+      margin-bottom: 2vh;
+      margin-top: 4vh; */
+    }
+  }
+  .fronts p {
+    padding: 0px;
+  }
+
+  .Franchise-Form > form {
+    padding-left: 3vw;
+    margin-top: 3vh;
+  }
+  .Franchise-Form label {
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  .Franchise > h1 {
+    margin-top: 10vh;
+    font-size: 3rem;
+    padding-bottom: 10px;
+  }
+}
+.front h1 {
+  font-size: 2rem;
+  /* text-decoration: underline; */
+}
+
+.Content-Card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #dc3a3a;
+  border-radius: 16px;
+  height: 60px;
+  padding: 20px;
+  gap: 20px;
+  width: 340px;
+}
+.flex-contact {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.Content-Img {
+  height: 40px;
+  img {
+    height: 100%;
+  }
+  border: 1px solid black;
+  border-radius: 100%;
+  padding: 10px;
+  background: #fff;
+}
+.Content-Card-solo {
+  color: #000000;
+}

@@ -1,0 +1,149 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url("./Nav-bg.jpg");
+  color: white;
+  transition: transform 0.3s ease;
+  height: 10vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Josefin Sans,serif";
+}
+/* .none {
+  display: none;
+} */
+.navbar {
+  a {
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-weight: 800;
+  }
+  a.active {
+    background: rgba(255, 255, 255, 0.3);
+    font-size: 20px;
+    font-weight: 800;
+
+    border-radius: 12px;
+    padding: 10px 20px;
+  }
+}
+
+.Nav-logo {
+  img {
+    position: relative;
+    height: 10vh;
+    rotate: -16deg;
+    top: 20px;
+    z-index: 15;
+  }
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 1px 5px;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Add this to your main CSS file or create a new one */
+
+@keyframes MoviingBuss {
+  0% {
+    left: -5%;
+  }
+
+  100% {
+    left: calc(100% - 120px);
+  }
+}
+
+.Nav-Bus {
+  top: 0px;
+
+  height: 10vh; /* Set your desired height */
+
+  position: fixed;
+  left: calc(100% - 120px);
+  animation: MoviingBuss 5s linear;
+  img {
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+    color: white;
+  }
+}
+
+/* Sidebar Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+  }
+  .Nav-Bus {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 12vh;
+    left: 0;
+    width: 100%;
+    height: 88vh;
+    background-color: rgb(27, 37, 126);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  .nav-links a {
+    margin: 10px 0px;
+    padding: 10px 0px;
+    width: 200px;
+
+    text-align: center;
+  }
+
+  .hamburger {
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-right: 15px;
+    display: flex;
+    position: relative;
+    padding: 10px;
+    border-radius: 100px;
+    background: red;
+    outline: none;
+    border: none;
+    color: white;
+
+    width: 7vh;
+    height: 7vh;
+    justify-content: center;
+    align-items: center;
+  }
+}

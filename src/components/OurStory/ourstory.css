@@ -1,0 +1,120 @@
+.OurStory-C {
+  height: 100vh;
+  width: 100vw;
+  /* background: url("./BgBuss.jpg"); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./BgBuss.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.OurStory-C-content-changes {
+  text-align: left;
+}
+.OurStory-C-content {
+  background: rgba(0, 0, 0, 0.5);
+  /* margin: 20vw; */
+  padding: 5vw;
+  text-align: center;
+  line-height: 4rem;
+
+  h1 {
+    color: #ffff;
+    font-size: 4em;
+    font-family: Josefin Sans, serif;
+    font-weight: 700;
+  }
+  p {
+    color: #db2b2b;
+    /* margin-top: 20px; */
+    font-size: 4em;
+    font-family: Josefin Sans, serif;
+    font-weight: 700;
+    width: max-content;
+    padding: 0px 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  OurStory-content-card-text p {
+    color: black;
+    font-family: Cormorant Infant, serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: normal;
+  }
+  .OurStory-C-content {
+    padding: 10px;
+    margin: 10vw;
+    h1 {
+      font-size: 3em;
+      font-weight: 700;
+    }
+    p {
+      font-size: 3em;
+    }
+  }
+}
+
+.OurStory-K {
+  height: 100vh;
+  width: 100vw;
+  background: url("./OurStory-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.OurStory-K-content {
+  background: rgba(0, 0, 0, 0.5);
+  margin: 20vw;
+  padding: 5vw;
+  text-align: center;
+  h1 {
+    color: #db2b2b;
+    font-size: 3em;
+    font-weight: 700;
+    font-family: Cormorant Infant, serif;
+    font-weight: 700;
+  }
+  p {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-family: Josefin Sans, serif;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 768px) {
+  OurStory-Kontent-card-text p {
+    color: black;
+    font-family: Cormorant Infant, serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: normal;
+  }
+  .OurStory-K-content {
+    padding: 10px;
+    margin: 10vw;
+    h1 {
+      font-size: 3em;
+      font-weight: 700;
+    }
+    p {
+      font-size: 1.2em;
+    }
+  }
+}
+.changes-logo {
+  display: none;
+  width: 50px;
+  position: relative;
+  top: 63px;
+  right: 18px;
+  transform: rotate(323deg);
+}

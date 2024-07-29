@@ -1,0 +1,16 @@
+.contctback {
+  background: url("./BgBuss.jpg");
+  background-size: cover;
+  height: 130vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contct-content-box {
+  background: #000000cf;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
